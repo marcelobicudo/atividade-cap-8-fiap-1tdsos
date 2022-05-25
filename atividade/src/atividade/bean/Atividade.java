@@ -19,7 +19,9 @@ public class Atividade {
         this.vl_tempo = vl_tempo;
     }
 
-    
+    public Atividade() {
+
+    }
 
     public int getId_atividade() {
         return id_atividade;

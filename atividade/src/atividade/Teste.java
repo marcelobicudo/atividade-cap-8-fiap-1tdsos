@@ -1,9 +1,13 @@
 package atividade;
 
+import atividade.DAO.AtividadeDAO;
 import atividade.DAO.PesoDAO;
 import atividade.DAO.PressaoDAO;
+import atividade.bean.Atividade;
 import atividade.bean.Peso;
 import atividade.bean.Pressao;
+
+import java.sql.Date;
 
 public class Teste {
     public static void main(String[] args) {
@@ -91,5 +95,59 @@ public class Teste {
         pressaoDao.cadastrar(pressao5);
        
         System.out.println("Cadastro de Pressão 5:");
+
+        // ATIVIDADE
+
+        AtividadeDAO atividadeDAO = new AtividadeDAO();
+        Atividade atividade1 = new Atividade();
+        atividade1.setId_usuario(1);
+        atividade1.setId_esporte(2);
+        atividade1.setDt_atividade(new Date(new java.util.Date().getTime()));
+        atividade1.setVl_calorias(500);
+        atividade1.setVl_tempo(42.30);
+        atividadeDAO.cadastrar(atividade1);
+
+        System.out.println("Cadastro de Atividade 1:");
+
+        Atividade atividade2 = new Atividade();
+        atividade2.setId_usuario(1);
+        atividade2.setId_esporte(3);
+        atividade2.setDt_atividade(new Date(new java.util.Date().getTime()));
+        atividade2.setVl_calorias(150);
+        atividade2.setVl_tempo(25.00);
+        atividadeDAO.cadastrar(atividade2);
+
+        System.out.println("Cadastro de Atividade 2:");
+
+        Atividade atividade3 = new Atividade();
+        atividade3.setId_usuario(1);
+        atividade3.setId_esporte(2);
+        atividade3.setDt_atividade(new Date(new java.util.Date().getTime()));
+        atividade3.setVl_calorias(200);
+        atividade3.setVl_tempo(18.51);
+        atividadeDAO.cadastrar(atividade3);
+
+        System.out.println("Cadastro de Atividade 3:");
+
+        Atividade atividade4 = new Atividade();
+        atividade4.setId_usuario(2);
+        atividade4.setId_esporte(4);
+        atividade4.setDt_atividade(new Date(new java.util.Date().getTime()));
+        atividade4.setVl_calorias(784);
+        atividade4.setVl_tempo(65.07);
+        atividadeDAO.cadastrar(atividade4);
+
+        System.out.println("Cadastro de Atividade 4:");
+
+        Atividade atividade5 = new Atividade();
+        atividade5.setId_usuario(1);
+        atividade5.setId_esporte(1);
+        atividade5.setDt_atividade(new Date(new java.util.Date().getTime()));
+        atividade5.setVl_calorias(235);
+        atividade5.setVl_tempo(41.22);
+        atividadeDAO.cadastrar(atividade5);
+
+        System.out.println("Cadastro de Atividade 5:");
+
     }
 }
