@@ -1,90 +1,95 @@
 package atividade;
 
+import atividade.DAO.PesoDAO;
+import atividade.DAO.PressaoDAO;
+import atividade.bean.Peso;
+import atividade.bean.Pressao;
+
 public class Teste {
     public static void main(String[] args) {
-        //PESSOA
-
-
-        //PESO 
+        //PESO
         PesoDAO pDao = new PesoDAO();
-        Peso peso = new Peso();
-        peso.setVl_peso(61.50);
-        peso.setDt_pesagem(new java.sql.Date(new java.util.Date().getTime()));
-        peso.setId_usuario()
-       
-        System.out.println("Cadastro de Peso 1:" + pDao.add(peso));
+        System.out.println("Cadastro de Peso 1");
 
         Peso peso1 = new Peso();
         peso1.setVl_peso(60.50);
         peso1.setDt_pesagem(new java.sql.Date(new java.util.Date().getTime()));
-        peso1.setId_usuario()
+        peso1.setId_usuario(1);
+        pDao.cadastrar(peso1);
         
-        System.out.println("Cadastro de Peso 2:" + pDao.add(peso1));
+        System.out.println("Cadastro de Peso 2");
 
         Peso peso2 = new Peso();
         peso2.setVl_peso(75.50);
         peso2.setDt_pesagem(new java.sql.Date(new java.util.Date().getTime()));
-        peso2.setId_usuario()
+        peso2.setId_usuario(1);
+        pDao.cadastrar(peso2);
         
-        System.out.println("Cadastro de Peso 2:" + pDao.add(peso2));
+        System.out.println("Cadastro de Peso 3");
 
         Peso peso3 = new Peso();
         peso3.setVl_peso(75.50);
         peso3.setDt_pesagem(new java.sql.Date(new java.util.Date().getTime()));
-        peso3.setId_usuario()
+        peso3.setId_usuario(1);
+        pDao.cadastrar(peso3);
         
-        System.out.println("Cadastro de Peso 3:" + pDao.add(peso3));
+        System.out.println("Cadastro de Peso 4:");
 
         Peso peso4 = new Peso();
         peso4.setVl_peso(75.50);
         peso4.setDt_pesagem(new java.sql.Date(new java.util.Date().getTime()));
-        peso4.setId_usuario()
+        peso4.setId_usuario(1);
+        pDao.cadastrar(peso4);
         
-        System.out.println("Cadastro de Peso 4:" + pDao.add(peso4));
+        System.out.println("Cadastro de Peso 5:");
 
         Peso peso5 = new Peso();
         peso5.setVl_peso(75.50);
         peso5.setDt_pesagem(new java.sql.Date(new java.util.Date().getTime()));
-        peso5.setId_usuario()
-        
-        System.out.println("Cadastro de Peso 5:" + pDao.add(peso5));
+        peso5.setId_usuario(1);
+        pDao.cadastrar(peso5);
 
         // PRESSAO
 
         PressaoDAO pressaoDao = new PressaoDAO();
         Pressao pressao1 = new Pressao();
-        pressao1.setId_usuario()
+        pressao1.setId_usuario(1);
         pressao1.setDt_medicao(new java.sql.Date(new java.util.Date().getTime()));
-        pressao1.setVl_bpm(95)
+        pressao1.setVl_bpm(95);
+        pressaoDao.cadastrar(pressao1);
        
-        System.out.println("Cadastro de Pressão 1:" + pressaoDao.add(pressao1));
+        System.out.println("Cadastro de Pressão 1:");
 
         Pressao pressao2 = new Pressao();
-        pressao2.setId_usuario()
+        pressao2.setId_usuario(1);
         pressao2.setDt_medicao(new java.sql.Date(new java.util.Date().getTime()));
-        pressao2.setVl_bpm(110)
+        pressao2.setVl_bpm(110);
+        pressaoDao.cadastrar(pressao2);
        
-        System.out.println("Cadastro de Pressão 2:" + pressaoDao.add(pressao2));
+        System.out.println("Cadastro de Pressão 2:");
 
         Pressao pressao3 = new Pressao();
-        pressao3.setId_usuario()
+        pressao3.setId_usuario(1);
         pressao3.setDt_medicao(new java.sql.Date(new java.util.Date().getTime()));
-        pressao3.setVl_bpm(120)
+        pressao3.setVl_bpm(120);
+        pressaoDao.cadastrar(pressao3);
        
-        System.out.println("Cadastro de Pressão 3:" + pressaoDao.add(pressao3));
+        System.out.println("Cadastro de Pressão 3:");
 
         Pressao pressao4 = new Pressao();
-        pressao4.setId_usuario()
+        pressao4.setId_usuario(1);
         pressao4.setDt_medicao(new java.sql.Date(new java.util.Date().getTime()));
-        pressao4.setVl_bpm(118)
+        pressao4.setVl_bpm(118);
+        pressaoDao.cadastrar(pressao4);
        
-        System.out.println("Cadastro de Pressão 4:" + pressaoDao.add(pressao4));
+        System.out.println("Cadastro de Pressão 4:");
 
         Pressao pressao5 = new Pressao();
-        pressao5.setId_usuario()
+        pressao5.setId_usuario(1);
         pressao5.setDt_medicao(new java.sql.Date(new java.util.Date().getTime()));
-        pressao5.setVl_bpm(115)
+        pressao5.setVl_bpm(115);
+        pressaoDao.cadastrar(pressao5);
        
-        System.out.println("Cadastro de Pressão 5:" + pressaoDao.add(pressao5));
+        System.out.println("Cadastro de Pressão 5:");
     }
 }
