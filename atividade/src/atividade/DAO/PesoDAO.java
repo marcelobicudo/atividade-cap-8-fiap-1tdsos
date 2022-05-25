@@ -10,7 +10,6 @@ public class PesoDAO {
 
     private Connection conexao;
 
-    //TODO - incluir parametros
     public void cadastrar(Peso peso) {
         PreparedStatement stmt = null;
         DAO dao = new DAO();
