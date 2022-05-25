@@ -15,7 +15,7 @@ public class AlimentoDAO {
 
         try {
             conexao = dao.getConnection();
-            String sql = "INSERT INTO T_ALIMENTOS(id_alimento, id_usuario, dt_refeicao, nm_alimento) VALUES (SQ_T_ALIMENTOS.NEXTVAL, ?, ?, ?)";
+            String sql = "INSERT INTO T_ALIMENTOS(id_alimento, id_usuario, dt_refeicao, nm_alimento) VALUES (SEQ_ALIMENTOS.NEXTVAL, ?, ?, ?)";
             stmt = conexao.prepareStatement(sql);
             stmt.setInt(1, alimento.getId_usuario());
             stmt.setDate(2, alimento.getDt_refeicao());

@@ -15,7 +15,7 @@ public class PressaoDAO {
 
         try {
             conexao = dao.getConnection();
-            String sql = "INSERT INTO T_PRESSAO(id_pressao, id_usuario, dt_medicao, vl_bpm) VALUES (SQ_T_PRESSAO.NEXTVAL, ?, ?, ?)";
+            String sql = "INSERT INTO T_PRESSAO(id_pressao, id_usuario, dt_medicao, vl_bpm) VALUES (SEQ_PRESSAO.NEXTVAL, ?, ?, ?)";
             stmt = conexao.prepareStatement(sql);
             stmt.setInt(1, pressao.getId_usuario());
             stmt.setDate(2, pressao.getDt_medicao());

@@ -15,7 +15,7 @@ public class EsporteDAO {
 
         try {
             conexao = dao.getConnection();
-            String sql = "INSERT INTO T_ESPORTES(id_esporte, nm_esporte) VALUES (SQ_T_ESPORTE.NEXTVAL, ?)";
+            String sql = "INSERT INTO T_ESPORTES(id_esporte, nm_esporte) VALUES (SEQ_ESPORTES.NEXTVAL, ?)";
             stmt = conexao.prepareStatement(sql);
             stmt.setString(1, esporte.getNm_esporte());
 

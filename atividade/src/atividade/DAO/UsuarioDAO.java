@@ -15,7 +15,7 @@ public class UsuarioDAO {
 
         try {
             conexao = dao.getConnection();
-            String sql = "INSERT INTO T_USUARIO(id_usuario, nm_usuario, sn_usuario, sh_usuario, dt_usuario, ds_email, vl_altura) VALUES (SQ_T_USUARIO.NEXTVAL, ?, ?, ?, ?, ?, ?)";
+            String sql = "INSERT INTO T_USUARIO(id_usuario, nm_usuario, sn_usuario, sh_usuario, dt_usuario, ds_email, vl_altura) VALUES (SEQ_USUARIO.NEXTVAL, ?, ?, ?, ?, ?, ?)";
             stmt = conexao.prepareStatement(sql);
             stmt.setString(1, usuario.getNm_usuario());
             stmt.setString(2, usuario.getSn_usuario());
@@ -46,7 +46,7 @@ public class UsuarioDAO {
 
         try {
             conexao = dao.getConnection();
-            stmt = conexao.prepareStatement("SELECT * FROM T_USUARIOS");
+            stmt = conexao.prepareStatement("SELECT * FROM T_USUARIO");
             resultSet = dao.getData(stmt);
 
             while (resultSet.next()) {
