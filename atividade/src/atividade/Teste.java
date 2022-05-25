@@ -3,7 +3,51 @@ package atividade;
 public class Teste {
     public static void main(String[] args) {
         //PESSOA
+        UsuarioDAO uDAO = new UsuarioDAO();
+        Usuario usuario1 = new Usuario();
+        usuario1.setSn_usuario(61.50);
+        usuario1.setSh_usuario();
+        usuario1.setDt_usuario(new java.sql.Date(new java.util.Date().getTime()));
+        usuario1.setDs_email("maria@gmail.com");
+        usuario1.setVl_altura(1.61);
 
+        System.out.println("Cadastro de Pessoa 1:" + uDAO.cadastrar(usuario1));
+
+        Usuario usuario2 = new Usuario();
+        usuario2.setSn_usuario(62.50);
+        usuario2.setSh_usuario();
+        usuario2.setDt_usuario(new java.sql.Date(new java.util.Date().getTime()));
+        usuario2.setDs_email("Leticia@gmail.com");
+        usuario2.setVl_altura(1.71);
+
+        System.out.println("Cadastro de Pessoa 2:" + uDAO.cadastrar(usuario2));
+
+        Usuario usuario3 = new Usuario();
+        usuario3.setSn_usuario(63.50);
+        usuario3.setSh_usuario();
+        usuario3.setDt_usuario(new java.sql.Date(new java.util.Date().getTime()));
+        usuario3.setDs_email("joao@gmail.com");
+        usuario3.setVl_altura(1.40);
+
+        System.out.println("Cadastro de Pessoa 3:" + uDAO.cadastrar(usuario3));
+
+        Usuario usuario4 = new Usuario();
+        usuario4.setSn_usuario(59.50);
+        usuario4.setSh_usuario();
+        usuario4.setDt_usuario(new java.sql.Date(new java.util.Date().getTime()));
+        usuario4.setDs_email("renata@gmail.com");
+        usuario4.setVl_altura(1.40);
+
+        System.out.println("Cadastro de Pessoa 4:" + uDAO.cadastrar(usuario4));
+
+        Usuario usuario5 = new Usuario();
+        usuario5.setSn_usuario(59.50);
+        usuario5.setSh_usuario();
+        usuario5.setDt_usuario(new java.sql.Date(new java.util.Date().getTime()));
+        usuario5.setDs_email("renata@gmail.com");
+        usuario5.setVl_altura(1.40);
+
+        System.out.println("Cadastro de Pessoa 5:" + uDAO.cadastrar(usuario5));
 
         //PESO 
         PesoDAO pDao = new PesoDAO();
