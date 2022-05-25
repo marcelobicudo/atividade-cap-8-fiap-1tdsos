@@ -1,17 +1,65 @@
 package atividade;
 
-import atividade.DAO.AtividadeDAO;
-import atividade.DAO.PesoDAO;
-import atividade.DAO.PressaoDAO;
-import atividade.bean.Atividade;
-import atividade.bean.Peso;
-import atividade.bean.Pressao;
+import atividade.DAO.*;
+import atividade.bean.*;
 
 import java.sql.Date;
 
 public class Teste {
     public static void main(String[] args) {
-        //PESO
+        //PESSOA
+        UsuarioDAO uDAO = new UsuarioDAO();
+        Usuario usuario1 = new Usuario();
+        usuario1.setSn_usuario("maria");
+        usuario1.setSh_usuario("M09921");
+        usuario1.setDt_usuario(new java.sql.Date(new java.util.Date().getTime()));
+        usuario1.setDs_email("maria@gmail.com");
+        usuario1.setVl_altura(1.61);
+        uDAO.cadastrar(usuario1);
+
+        System.out.println("Cadastro de Pessoa 1:");
+
+        Usuario usuario2 = new Usuario();
+        usuario2.setSn_usuario("leticia");
+        usuario2.setSh_usuario("L09922");
+        usuario2.setDt_usuario(new java.sql.Date(new java.util.Date().getTime()));
+        usuario2.setDs_email("Leticia@gmail.com");
+        usuario2.setVl_altura(1.71);
+        uDAO.cadastrar(usuario2);
+
+        System.out.println("Cadastro de Pessoa 2:");
+
+        Usuario usuario3 = new Usuario();
+        usuario3.setSn_usuario("joao");
+        usuario3.setSh_usuario("J09923");
+        usuario3.setDt_usuario(new java.sql.Date(new java.util.Date().getTime()));
+        usuario3.setDs_email("joao@gmail.com");
+        usuario3.setVl_altura(1.40);
+        uDAO.cadastrar(usuario3);
+
+        System.out.println("Cadastro de Pessoa 3:");
+
+        Usuario usuario4 = new Usuario();
+        usuario4.setSn_usuario("renata");
+        usuario4.setSh_usuario("RE09924");
+        usuario4.setDt_usuario(new java.sql.Date(new java.util.Date().getTime()));
+        usuario4.setDs_email("renata@gmail.com");
+        usuario4.setVl_altura(1.40);
+        uDAO.cadastrar(usuario4);
+
+        System.out.println("Cadastro de Pessoa 4:");
+
+        Usuario usuario5 = new Usuario();
+        usuario5.setSn_usuario("marta");
+        usuario5.setSh_usuario("M09925");
+        usuario5.setDt_usuario(new java.sql.Date(new java.util.Date().getTime()));
+        usuario5.setDs_email("marta@gmail.com");
+        usuario5.setVl_altura(1.40);
+        uDAO.cadastrar(usuario5);
+
+        System.out.println("Cadastro de Pessoa 5:");
+
+        //PESO 
         PesoDAO pDao = new PesoDAO();
         System.out.println("Cadastro de Peso 1");
 
@@ -26,7 +74,7 @@ public class Teste {
         Peso peso2 = new Peso();
         peso2.setVl_peso(75.50);
         peso2.setDt_pesagem(new java.sql.Date(new java.util.Date().getTime()));
-        peso2.setId_usuario(1);
+        peso2.setId_usuario(2);
         pDao.cadastrar(peso2);
         
         System.out.println("Cadastro de Peso 3");
@@ -34,7 +82,7 @@ public class Teste {
         Peso peso3 = new Peso();
         peso3.setVl_peso(75.50);
         peso3.setDt_pesagem(new java.sql.Date(new java.util.Date().getTime()));
-        peso3.setId_usuario(1);
+        peso3.setId_usuario(3);
         pDao.cadastrar(peso3);
         
         System.out.println("Cadastro de Peso 4:");
@@ -42,7 +90,7 @@ public class Teste {
         Peso peso4 = new Peso();
         peso4.setVl_peso(75.50);
         peso4.setDt_pesagem(new java.sql.Date(new java.util.Date().getTime()));
-        peso4.setId_usuario(1);
+        peso4.setId_usuario(4);
         pDao.cadastrar(peso4);
         
         System.out.println("Cadastro de Peso 5:");
@@ -50,11 +98,10 @@ public class Teste {
         Peso peso5 = new Peso();
         peso5.setVl_peso(75.50);
         peso5.setDt_pesagem(new java.sql.Date(new java.util.Date().getTime()));
-        peso5.setId_usuario(1);
+        peso5.setId_usuario(5);
         pDao.cadastrar(peso5);
 
         // PRESSAO
-
         PressaoDAO pressaoDao = new PressaoDAO();
         Pressao pressao1 = new Pressao();
         pressao1.setId_usuario(1);
@@ -93,7 +140,7 @@ public class Teste {
         pressao5.setDt_medicao(new java.sql.Date(new java.util.Date().getTime()));
         pressao5.setVl_bpm(115);
         pressaoDao.cadastrar(pressao5);
-       
+
         System.out.println("Cadastro de Pressão 5:");
 
         // ATIVIDADE
@@ -149,5 +196,78 @@ public class Teste {
 
         System.out.println("Cadastro de Atividade 5:");
 
+        // ESPORTE
+        EsporteDAO eDao = new EsporteDAO();
+        Esporte esporte1 = new Esporte();
+        esporte1.setNm_esporte("Natação");
+        eDao.cadastrar(esporte1);
+
+        System.out.println("Cadastro de Esporte 1:");
+
+        Esporte esporte2 = new Esporte();
+        esporte2.setNm_esporte("Futebol");
+        eDao.cadastrar(esporte2);
+
+        System.out.println("Cadastro de Esporte 2:");
+
+        Esporte esporte3 = new Esporte();
+        esporte3.setNm_esporte("Basquete");
+        eDao.cadastrar(esporte3);
+
+        System.out.println("Cadastro de Esporte 3:");
+
+        Esporte esporte4 = new Esporte();
+        esporte4.setNm_esporte("Volei");
+        eDao.cadastrar(esporte4);
+
+        System.out.println("Cadastro de Esporte 4:");
+
+        Esporte esporte5 = new Esporte();
+        esporte5.setNm_esporte("Corrida");
+        eDao.cadastrar(esporte5);
+
+        System.out.println("Cadastro de Esporte 5:");
+   
+        // ALIMENTO
+        AlimentoDAO aDao = new AlimentoDAO();
+        Alimento alimento1 = new Alimento();
+        alimento1.setId_usuario(1);
+        alimento1.setDt_refeicao(new java.sql.Date(new java.util.Date().getTime()));
+        alimento1.setNm_alimento("Sopa");
+        aDao.cadastrar(alimento1);
+       
+        System.out.println("Cadastro de Alimantação 1:");
+
+        Alimento alimento2 = new Alimento();
+        alimento2.setId_usuario(2);
+        alimento2.setDt_refeicao(new java.sql.Date(new java.util.Date().getTime()));
+        alimento2.setNm_alimento("Pizza");
+        aDao.cadastrar(alimento2);
+       
+        System.out.println("Cadastro de Alimantação 2:");
+
+        Alimento alimento3 = new Alimento();
+        alimento3.setId_usuario(3);
+        alimento3.setDt_refeicao(new java.sql.Date(new java.util.Date().getTime()));
+        alimento3.setNm_alimento("Bolo");
+        aDao.cadastrar(alimento3);
+       
+        System.out.println("Cadastro de Alimantação 3:");
+
+        Alimento alimento4 = new Alimento();
+        alimento4.setId_usuario(4);
+        alimento4.setDt_refeicao(new java.sql.Date(new java.util.Date().getTime()));
+        alimento4.setNm_alimento("Bolo");
+        aDao.cadastrar(alimento4);
+       
+        System.out.println("Cadastro de Alimantação 4:");
+        
+        Alimento alimento5 = new Alimento();
+        alimento5.setId_usuario(5);
+        alimento5.setDt_refeicao(new java.sql.Date(new java.util.Date().getTime()));
+        alimento5.setNm_alimento("Torta");
+        aDao.cadastrar(alimento5);
+       
+        System.out.println("Cadastro de Alimantação 5:");
     }
 }
