@@ -9,6 +9,10 @@ public class Esporte {
         this.nm_esporte = nm_esporte;
     }
 
+    public Esporte() {
+
+    }
+
     public int getId_esporte() {
         return id_esporte;
     }

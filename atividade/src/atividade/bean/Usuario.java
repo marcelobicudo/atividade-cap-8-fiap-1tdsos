@@ -21,6 +21,10 @@ public class Usuario {
         this.vl_altura = vl_altura;
     }
 
+    public Usuario() {
+
+    }
+
     public int getId_usuario() {
         return id_usuario;
     }

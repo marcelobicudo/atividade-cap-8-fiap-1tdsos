@@ -15,6 +15,10 @@ public class Alimento {
         this.nm_alimento = nm_alimento;
     }
 
+    public Alimento() {
+
+    }
+
     public int getId_alimento() {
         return id_alimento;
     }
