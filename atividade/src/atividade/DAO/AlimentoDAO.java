@@ -1,7 +1,6 @@
 package atividade.DAO;
 
 import atividade.bean.Alimento;
-import atividade.bean.Pressao;
 
 import java.sql.*;
 import java.util.ArrayList;
