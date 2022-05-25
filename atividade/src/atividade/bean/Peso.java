@@ -16,6 +16,10 @@ public class Peso {
         this.vl_peso = vl_peso;
     }
 
+    public Peso() {
+        
+    }
+
     public int getId_peso() {
         return id_peso;
     }

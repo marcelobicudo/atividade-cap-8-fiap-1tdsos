@@ -15,6 +15,10 @@ public class Pressao {
         this.vl_bpm = vl_bpm;
     }
 
+    public Pressao() {
+
+    }
+
     public int getId_pressao() {
         return id_pressao;
     }
