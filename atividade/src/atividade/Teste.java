@@ -97,7 +97,6 @@ public class Teste {
         pDao.cadastrar(peso5);
 
         // PRESSAO
-
         PressaoDAO pressaoDao = new PressaoDAO();
         Pressao pressao1 = new Pressao();
         pressao1.setId_usuario(1);
@@ -164,7 +163,44 @@ public class Teste {
         Esporte esporte5 = new Esporte();
         esporte5.setNm_esporte("Corrida")
 
-        System.out.println("Cadastro de Esporte 5:" + pressaoDao.cadastrar(esporte4));
- 
+        System.out.println("Cadastro de Esporte 5:" + pressaoDao.cadastrar(esporte5));
+   
+        // ALIMENTO
+        AlimentoDAO aDAO = new AlimentoDAO();
+        Alimento alimento1 = new Alimento();
+        alimento1.setId_usuario(1);
+        alimento1.setDt_refeicao(new java.sql.Date(new java.util.Date().getTime()));
+        alimento1.setNm_alimento("Sopa");
+       
+        System.out.println("Cadastro de Alimantação 1:" + aDao.cadastrar(alimento1));
+
+        Alimento alimento2 = new Alimento();
+        alimento2.setId_usuario(2);
+        alimento2.setDt_refeicao(new java.sql.Date(new java.util.Date().getTime()));
+        alimento2.setNm_alimento("Pizza");
+       
+        System.out.println("Cadastro de Alimantação 2:" + aDao.cadastrar(alimento2));
+
+        Alimento alimento3 = new Alimento();
+        alimento3.setId_usuario(3);
+        alimento3.setDt_refeicao(new java.sql.Date(new java.util.Date().getTime()));
+        alimento3.setNm_alimento("Bolo");
+       
+        System.out.println("Cadastro de Alimantação 3:" + aDao.cadastrar(alimento3));
+
+        Alimento alimento4 = new Alimento();
+        alimento4.setId_usuario(4);
+        alimento4.setDt_refeicao(new java.sql.Date(new java.util.Date().getTime()));
+        alimento4.setNm_alimento("Bolo");
+       
+        System.out.println("Cadastro de Alimantação 4:" + aDao.cadastrar(alimento4));
+        
+        Alimento alimento5 = new Alimento();
+        alimento5.setId_usuario(5);
+        alimento5.setDt_refeicao(new java.sql.Date(new java.util.Date().getTime()));
+        alimento5.setNm_alimento("Torta");
+       
+        System.out.println("Cadastro de Alimantação 5:" + aDao.cadastrar(alimento5));
+
     }
 }
