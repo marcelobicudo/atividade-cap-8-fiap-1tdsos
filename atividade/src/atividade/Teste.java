@@ -69,7 +69,7 @@ public class Teste {
         Peso peso2 = new Peso();
         peso2.setVl_peso(75.50);
         peso2.setDt_pesagem(new java.sql.Date(new java.util.Date().getTime()));
-        peso2.setId_usuario(1);
+        peso2.setId_usuario(2);
         pDao.cadastrar(peso2);
         
         System.out.println("Cadastro de Peso 3");
@@ -77,7 +77,7 @@ public class Teste {
         Peso peso3 = new Peso();
         peso3.setVl_peso(75.50);
         peso3.setDt_pesagem(new java.sql.Date(new java.util.Date().getTime()));
-        peso3.setId_usuario(1);
+        peso3.setId_usuario(3);
         pDao.cadastrar(peso3);
         
         System.out.println("Cadastro de Peso 4:");
@@ -85,7 +85,7 @@ public class Teste {
         Peso peso4 = new Peso();
         peso4.setVl_peso(75.50);
         peso4.setDt_pesagem(new java.sql.Date(new java.util.Date().getTime()));
-        peso4.setId_usuario(1);
+        peso4.setId_usuario(4);
         pDao.cadastrar(peso4);
         
         System.out.println("Cadastro de Peso 5:");
@@ -93,7 +93,7 @@ public class Teste {
         Peso peso5 = new Peso();
         peso5.setVl_peso(75.50);
         peso5.setDt_pesagem(new java.sql.Date(new java.util.Date().getTime()));
-        peso5.setId_usuario(1);
+        peso5.setId_usuario(5);
         pDao.cadastrar(peso5);
 
         // PRESSAO
@@ -165,6 +165,6 @@ public class Teste {
         esporte5.setNm_esporte("Corrida")
 
         System.out.println("Cadastro de Esporte 5:" + pressaoDao.cadastrar(esporte4));
-
+ 
     }
 }
