@@ -142,32 +142,34 @@ public class Teste {
         EsporteDAO eDao = new EsporteDAO();
         Esporte esporte1 = new Esporte();
         esporte1.setNm_esporte("Natação")
-        pressaoDao.cadastrar(esporte1)
+        eDao.cadastrar(esporte1)
 
         System.out.println("Cadastro de Esporte 1:" );
 
         Esporte esporte2 = new Esporte();
         esporte2.setNm_esporte("Futebol");
-        pressaoDao.cadastrar(esporte2);
+        eDao.cadastrar(esporte2);
 
         System.out.println("Cadastro de Esporte 2:" );
 
         Esporte esporte3 = new Esporte();
         esporte3.setNm_esporte("Basquete");
-        pressaoDao.cadastrar(esporte3);
+        eDao.cadastrar(esporte3);
 
         System.out.println("Cadastro de Esporte 3:" );
 
         Esporte esporte4 = new Esporte();
         esporte4.setNm_esporte("Volei")
-        pressaoDao.cadastrar(esporte4);
+        eDao.cadastrar(esporte4);
         System.out.println("Cadastro de Esporte 4:");
 
         Esporte esporte5 = new Esporte();
         esporte5.setNm_esporte("Corrida");
-        pressaoDao.cadastrar(esporte5);
+        eDao.cadastrar(esporte5);
 
         System.out.println("Cadastro de Esporte 5:");
+
+        System.out.println(aDAO.getAll());
    
         // ALIMENTO
         AlimentoDAO aDAO = new AlimentoDAO();
@@ -175,7 +177,7 @@ public class Teste {
         alimento1.setId_usuario(1);
         alimento1.setDt_refeicao(new java.sql.Date(new java.util.Date().getTime()));
         alimento1.setNm_alimento("Sopa");
-       aDao.cadastrar(alimento1);
+        aDao.cadastrar(alimento1);
 
         System.out.println("Cadastro de Alimantação 1:" );
 
@@ -207,10 +209,11 @@ public class Teste {
         alimento5.setId_usuario(5);
         alimento5.setDt_refeicao(new java.sql.Date(new java.util.Date().getTime()));
         alimento5.setNm_alimento("Torta");
-       aDao.cadastrar(alimento5);
-       
+        aDao.cadastrar(alimento5);
+
         System.out.println("Cadastro de Alimantação 5:" );
 
+        System.out.println(aDAO.getAll());
 
 
     }
