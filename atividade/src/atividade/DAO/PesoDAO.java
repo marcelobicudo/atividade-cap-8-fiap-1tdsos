@@ -17,12 +17,11 @@ public class PesoDAO {
 
         try {
             conexao = dao.getConnection();
-            String sql = "INSERT INTO T_PESO(id_peso, id_usuario, dt_pesagem, vl_peso) VALUES (SQ_T_PESO.NEXTVAL, ?, ?, ?, ?)";
+            String sql = "INSERT INTO T_PESO(id_peso, id_usuario, dt_pesagem, vl_peso) VALUES (SQ_T_PESO.NEXTVAL, ?, ?, ?)";
             stmt = conexao.prepareStatement(sql);
-            stmt.setInt(1, peso.getId_peso());
-            stmt.setInt(2, peso.getId_usuario());
-            stmt.setDate(3, peso.getDt_pesagem());
-            stmt.setDouble(4, peso.getVl_peso());
+            stmt.setInt(1, peso.getId_usuario());
+            stmt.setDate(2, peso.getDt_pesagem());
+            stmt.setDouble(3, peso.getVl_peso());
 
             stmt.executeUpdate();
         } catch (SQLException e) {
