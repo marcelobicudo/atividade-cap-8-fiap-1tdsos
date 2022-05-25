@@ -130,5 +130,28 @@ public class Teste {
         pressao5.setVl_bpm(115)
        
         System.out.println("Cadastro de Pressão 5:" + pressaoDao.add(pressao5));
+
+        // ESPORTE
+        EsporteDAO eDao = new EsporteDAO();
+        Esporte esporte1 = new Esporte();
+        esporte1.setNm_esporte("Natação")
+
+        System.out.println("Cadastro de Esporte 1:" + pressaoDao.cadastrar(esporte1));
+
+        Esporte esporte2 = new Esporte();
+        esporte2.setNm_esporte("Futebol")
+
+        System.out.println("Cadastro de Esporte 2:" + pressaoDao.cadastrar(esporte2));
+
+        Esporte esporte3 = new Esporte();
+        esporte3.setNm_esporte("Basquete")
+
+        System.out.println("Cadastro de Esporte 3:" + pressaoDao.cadastrar(esporte3));
+
+        Esporte esporte4 = new Esporte();
+        esporte4.setNm_esporte("Basquete")
+
+        System.out.println("Cadastro de Esporte 4:" + pressaoDao.cadastrar(esporte4));
+
     }
 }
