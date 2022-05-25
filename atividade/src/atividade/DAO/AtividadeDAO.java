@@ -45,7 +45,7 @@ public class AtividadeDAO {
 
         try {
             conexao = dao.getConnection();
-            stmt = conexao.prepareStatement("SELECT * FROM T_ATIVIDADES");
+            stmt = conexao.prepareStatement("SELECT * FROM T_ATIVIDADE");
             resultSet = dao.getData(stmt);
 
             while (resultSet.next()) {

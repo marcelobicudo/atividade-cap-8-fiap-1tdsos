@@ -49,7 +49,7 @@ public class AlimentoDAO {
             while (resultSet.next()) {
                 int id_alimento = resultSet.getInt("id_alimento");
                 int id_usuario = resultSet.getInt("id_usuario");
-                Date dt_refeicao = resultSet.getDate("dt_medicao");
+                Date dt_refeicao = resultSet.getDate("dt_refeicao");
                 String nm_alimento = resultSet.getString("nm_alimento");
 
                 Alimento alimento = new Alimento(id_alimento, id_usuario, dt_refeicao, nm_alimento);
