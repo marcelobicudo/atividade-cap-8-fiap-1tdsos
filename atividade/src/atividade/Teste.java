@@ -227,6 +227,7 @@ public class Teste {
         eDao.cadastrar(esporte5);
 
         System.out.println("Cadastro de Esporte 5:");
+
    
         // ALIMENTO
         AlimentoDAO aDao = new AlimentoDAO();
@@ -235,16 +236,18 @@ public class Teste {
         alimento1.setDt_refeicao(new java.sql.Date(new java.util.Date().getTime()));
         alimento1.setNm_alimento("Sopa");
         aDao.cadastrar(alimento1);
-       
-        System.out.println("Cadastro de Alimantação 1:");
+
+        System.out.println("Cadastro de Alimentação 1:");
+
 
         Alimento alimento2 = new Alimento();
         alimento2.setId_usuario(2);
         alimento2.setDt_refeicao(new java.sql.Date(new java.util.Date().getTime()));
         alimento2.setNm_alimento("Pizza");
         aDao.cadastrar(alimento2);
-       
-        System.out.println("Cadastro de Alimantação 2:");
+
+        System.out.println("Cadastro de Alimentação 2:");
+
 
         Alimento alimento3 = new Alimento();
         alimento3.setId_usuario(3);
@@ -252,7 +255,8 @@ public class Teste {
         alimento3.setNm_alimento("Bolo");
         aDao.cadastrar(alimento3);
        
-        System.out.println("Cadastro de Alimantação 3:");
+        System.out.println("Cadastro de Alimentação 3:");
+
 
         Alimento alimento4 = new Alimento();
         alimento4.setId_usuario(4);
@@ -261,13 +265,14 @@ public class Teste {
         aDao.cadastrar(alimento4);
        
         System.out.println("Cadastro de Alimantação 4:");
+
         
         Alimento alimento5 = new Alimento();
         alimento5.setId_usuario(5);
         alimento5.setDt_refeicao(new java.sql.Date(new java.util.Date().getTime()));
         alimento5.setNm_alimento("Torta");
         aDao.cadastrar(alimento5);
-       
-        System.out.println("Cadastro de Alimantação 5:");
+
+        System.out.println("Cadastro de Alimantação 5:" );
     }
 }
