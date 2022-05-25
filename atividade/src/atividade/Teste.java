@@ -23,7 +23,7 @@ public class Teste {
         System.out.println("Cadastro de Pessoa 1:");
 
         Usuario usuario2 = new Usuario();
-        usuario1.setNm_usuario("leticia");
+        usuario2.setNm_usuario("leticia");
         usuario2.setSn_usuario("costa");
         usuario2.setSh_usuario("L09922");
         usuario2.setDt_usuario(new java.sql.Date(new java.util.Date().getTime()));
@@ -34,7 +34,7 @@ public class Teste {
         System.out.println("Cadastro de Pessoa 2:");
 
         Usuario usuario3 = new Usuario();
-        usuario1.setNm_usuario("joao");
+        usuario3.setNm_usuario("joao");
         usuario3.setSn_usuario("silva");
         usuario3.setSh_usuario("J09923");
         usuario3.setDt_usuario(new java.sql.Date(new java.util.Date().getTime()));
@@ -45,7 +45,7 @@ public class Teste {
         System.out.println("Cadastro de Pessoa 3:");
 
         Usuario usuario4 = new Usuario();
-        usuario1.setNm_usuario("renata");
+        usuario4.setNm_usuario("renata");
         usuario4.setSn_usuario("santos");
         usuario4.setSh_usuario("RE09924");
         usuario4.setDt_usuario(new java.sql.Date(new java.util.Date().getTime()));
@@ -56,7 +56,7 @@ public class Teste {
         System.out.println("Cadastro de Pessoa 4:");
 
         Usuario usuario5 = new Usuario();
-        usuario1.setNm_usuario("marta");
+        usuario5.setNm_usuario("marta");
         usuario5.setSn_usuario("oliveira");
         usuario5.setSh_usuario("M09925");
         usuario5.setDt_usuario(new java.sql.Date(new java.util.Date().getTime()));
